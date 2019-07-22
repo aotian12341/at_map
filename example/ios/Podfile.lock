@@ -1,0 +1,22 @@
+PODS:
+  - at_map (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - at_map (from `.symlinks/plugins/at_map/ios`)
+  - Flutter (from `.symlinks/flutter/ios`)
+
+EXTERNAL SOURCES:
+  at_map:
+    :path: ".symlinks/plugins/at_map/ios"
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+
+SPEC CHECKSUMS:
+  at_map: 9c4e74be90dda04e08e31c73ea1a9af3c92e29fe
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+
+PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
+
+COCOAPODS: 1.5.3

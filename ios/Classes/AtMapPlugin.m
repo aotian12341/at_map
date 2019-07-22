@@ -1,4 +1,5 @@
 #import "AtMapPlugin.h"
+#import "TestViewFactory.h"
 
 @implementation AtMapPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
@@ -6,7 +7,10 @@
       methodChannelWithName:@"at_map"
             binaryMessenger:[registrar messenger]];
   AtMapPlugin* instance = [[AtMapPlugin alloc] init];
+    
   [registrar addMethodCallDelegate:instance channel:channel];
+    
+  [registrar registerViewFactory:[[TestViewFactory alloc] initWithMessenger:registrar.messenger] withId:@"atmap.com.testview"];
 }
 
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {

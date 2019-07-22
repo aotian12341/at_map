@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:at_map/at_map.dart';
+import 'package:at_map/testview.dart';
 
 void main() => runApp(MyApp());
 
@@ -48,7 +49,13 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+//          child: Text('Running on: $_platformVersion\n'),
+          child:  Container(
+//            height: 100,
+            child: testview(
+              txt: "我是天才",
+            )
+          ),
         ),
       ),
     );
